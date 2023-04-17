@@ -1,0 +1,22 @@
+{
+  "name": "htmlacademy-cms",
+  "version": "1.0.0",
+  "description": "Подготовка вёрстки для CMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asupstudent/HTMLAcademy-CMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asupstudent/HTMLAcademy-CMS/issues"
+  },
+  "homepage": "https://github.com/asupstudent/HTMLAcademy-CMS#readme",
+  "devDependencies": {
+    "stylelint-config-htmlacademy": "^1.1.4"
+  }
+}
