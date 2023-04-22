@@ -60,6 +60,7 @@ body {
 .wp-block-separator {
   width: 100%;
   height: 28px;
+  /*Почему не вынесен фон в разметку*/
   background-image: url("../img/separator-bread.svg");
   background-size: 208px 28px;
   background-repeat: no-repeat;
@@ -128,6 +129,7 @@ body {
   content: "";
   width: 16px;
   height: 16px;
+  /*Почему не вынесен фон в разметку*/
   background-image: url("../img/icon-in.svg");
   background-size: cover;
   top: 2px;
@@ -135,7 +137,11 @@ body {
 }
 
 .page-footer {
+  /*Почему не вынесены фоны в разметку*/
+  background-image: url("../img/background-darker.png"), url("../img/background-footer.jpeg");
   background-color: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 80px 0;
 }
 
@@ -164,4 +170,27 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.page-footer__social-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  margin: 0 16px;
+}
+
+.page-footer__social-item img {
+  max-width: 28px;
+  max-height: 28px;
 }
