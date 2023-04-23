@@ -44,18 +44,44 @@
         <div class="wrapper">
           <div class="reviews__wrapper">
             <h2 class="reviews__title visually-hidden">Оставить отзыв</h2>
-            <form action="https://echo.htmlacademy.ru/" class="reviews__form" method="post">
-              <div class="reviews__textarea textarea">
-                <label class="textarea__label" for="reviews-text">Оставить отзыв</label>
-                <textarea class="textarea__text" id="reviews-text" name="reviews-text" placeholder="Расскажите, что вы думаете о проекте"></textarea>
+            <div class="reviews__form-wrapper">
+              <form action="https://echo.htmlacademy.ru/" class="reviews__form" method="post">
+                <div class="reviews__textarea textarea">
+                  <label class="textarea__label" for="reviews-text">Оставить отзыв</label>
+                  <textarea class="textarea__text" id="reviews-text" name="reviews-text" placeholder="Расскажите, что вы думаете о проекте"></textarea>
+                </div>
+                <div class="reviews_name field-name">
+                  <label class="field-name__label visually-hidden" for="user-name">Введите Ваше имя</label>
+                  <input class="field-name__input" type="text" id="user-name" name="user-name" placeholder="Ваше имя" required>
+                </div>
+                <button class="reviews__form-submit button" type="submit">Отправить</button>
+                <div class="reviews__form-desc">Отзыв будет добавлен после проверки модератором</div>
+              </form>
+            </div>
+            <div class="review__wrapper">
+              <div class="review">
+                <div class="review__image-wrapper">
+                  <img src="img/ivan.jpg" alt="Иван" class="review__image" width="50" height="50">
+                </div>
+                <p class="review__name">Иван Грачев</p>
+                <p class="review__text">Очень самобытный и необычный проект.</p>
               </div>
-              <div class="reviews_name field-name">
-                <label class="field-name__label visually-hidden" for="user-name">Введите Ваше имя</label>
-                <input class="field-name__input" type="text" id="user-name" name="user-name" placeholder="Ваше имя" required>
+              <div class="review">
+                <div class="review__image-wrapper">
+                  <img src="img/maria.jpg" alt="Мария" class="review__image" width="50" height="50">
+                </div>
+                <p class="review__name">Мария Рачинская</p>
+                <p class="review__text">Мне особенно понравилось решение лестничных клеток. Кружки вообще очень стильные!</p>
               </div>
-              <button class="reviews__form-submit button" type="submit">Отправить</button>
-              <div class="reviews__form-desc">Отзыв будет добавлен после проверки модератором</div>
-            </form>
+              <div class="review">
+                <div class="review__image-wrapper">
+                  <img src="img/svetlana.jpg" alt="Светлана" class="review__image" width="50" height="50">
+                </div>
+                <p class="review__name">Светлана</p>
+                <p class="review__text">Очень нравится, что в городе развиваются такие проекты. Надеюсь, такие проекты
+                  скоро будут не только в частных домах, но и в кафе, музеях, театрах. Я бы сходила!</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
