@@ -68,6 +68,94 @@ body {
   margin: 60px 0;
 }
 
+.order {
+  padding: 120px 0;
+  background-image: url("../img/background-order.jpg");
+  background-size: cover;
+}
+
+.order__title {
+  font-family: "Arkhip", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.order-form__column-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-form__column-item {
+  width: 350px;
+  text-align: center;
+}
+
+.order-form {
+  margin: 64px 0 120px;
+}
+
+.order-form .wpcf7-text {
+  font-family: inherit;
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  padding: 21px;
+  background-color: #fffaf3;
+  border-radius: 200px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.order-form .wpcf7-text::placeholder {
+  color: #000000;
+  opacity: 0.2;
+}
+
+.order-form .wpcf7-select {
+  font-family: inherit;
+  font-weight: 500;
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  padding: 21px;
+  background-color: #fffaf3;
+  border-radius: 200px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  /*Общий вид select в всех браузерах*/
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8 12L-9.53992e-08 -5.08584e-07L16 -1.90735e-06L8 12Z' fill='black'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 244px;
+  background-position-y: 30px;
+}
+
+.order-form__column-item label {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 11px;
+}
+
+.order-form__column-item p label {
+  margin-left: 8px;
+}
+
+.order-form__column-item p {
+  margin: 0;
+}
+
+.order-form__checkbox-wrapper {
+  text-align: center;
+  margin-bottom: 37px;
+}
+
 .reviews {
   background-color: #fefaf3;
   padding: 120px 0;
