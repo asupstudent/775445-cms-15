@@ -69,7 +69,7 @@ body {
 }
 
 .order {
-  padding: 120px 0;
+  padding: 120px 0 119px;
   background-image: url("../img/background-order.jpg");
   background-size: cover;
 }
@@ -79,13 +79,14 @@ body {
   font-size: 36px;
   font-weight: 400;
   color: #ffffff;
-  margin: 0;
+  margin: 0 0 64px 0;
   text-align: center;
 }
 
 .order-form__column-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 47px;
 }
 
 .order-form__column-item {
@@ -93,21 +94,22 @@ body {
   text-align: center;
 }
 
-.order-form {
-  margin: 64px 0 120px;
-}
-
 .order-form .wpcf7-text {
   font-family: inherit;
   box-sizing: border-box;
   width: 100%;
   border: 0;
+  outline: none;
   padding: 21px;
   background-color: #fffaf3;
   border-radius: 200px;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
+}
+
+.order-form .wpcf7-text:focus {
+  outline: 5px solid rgba(255, 250, 243, 0.2);
 }
 
 .order-form .wpcf7-text::placeholder {
@@ -121,6 +123,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   border: 0;
+  outline: none;
   padding: 21px;
   background-color: #fffaf3;
   border-radius: 200px;
@@ -133,6 +136,10 @@ body {
   background-repeat: no-repeat;
   background-position-x: 244px;
   background-position-y: 30px;
+}
+
+.order-form .wpcf7-select:focus {
+  outline: 5px solid rgba(255, 250, 243, 0.2);
 }
 
 .order-form__column-item label {
@@ -153,7 +160,116 @@ body {
 
 .order-form__checkbox-wrapper {
   text-align: center;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
+  transform: translateX(-6px);
+}
+
+.order-form .wpcf7-list-item {
+  margin-left: 0;
+}
+
+.order-form .wpcf7-list-item input[type="checkbox"] {
+  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.order-form .wpcf7-list-item-label {
+  position: relative;
+  padding-left: 36px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.order-form .wpcf7-list-item-label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 2px solid #ffe3b8;
+  box-sizing: border-box;
+}
+
+.order-form .wpcf7-list-item-label:hover::before,
+.order-form .wpcf7-list-item input[type="checkbox"]:focus ~ .wpcf7-list-item-label::before {
+  outline: 5px solid rgba(255, 250, 243, 0.2);
+}
+
+.order-form .wpcf7-list-item-label:active::before {
+  border: 2px solid #d8874d;
+}
+
+.order-form .wpcf7-list-item input[type="checkbox"]:checked ~ .wpcf7-list-item-label::before {
+  background-color: #ffb076;
+  border: 0;
+}
+
+.order-form .wpcf7-list-item input[type="checkbox"]:checked ~ .wpcf7-list-item-label:active::before {
+  background-color: #d8874d;
+}
+
+.order-form .wpcf7-list-item input[type="checkbox"]:checked ~ .wpcf7-list-item-label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-checked.svg");
+  background-repeat: no-repeat;
+}
+
+.order-form .wpcf7-submit {
+  background-color: #ffb076;
+  border: 0;
+  outline: none;
+  padding: 21px;
+  width: 540px;
+  border-radius: 200px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.order-form .wpcf7-submit:hover {
+  background-color: #ee9c61;
+}
+
+.order-form .wpcf7-submit:active {
+  background-color: #d8874d;
+}
+
+.order-form .wpcf7-submit:focus {
+  outline: 5px solid rgba(255, 250, 243, 0.2);
+}
+
+.order-form__submit-wrapper {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.order-form__text {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  color: #8c8c8c;
 }
 
 .reviews {
