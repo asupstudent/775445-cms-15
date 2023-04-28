@@ -17,20 +17,6 @@ p {
   margin: 0;
 }
 
-.button {
-  display: inline-block;
-  padding: 16px;
-  text-decoration: none;
-  color: #ffffff;
-  text-align: center;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 500;
-  border: 0;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
