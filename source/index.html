@@ -43,26 +43,30 @@
       <section class="reviews">
         <div class="wrapper">
           <div class="reviews__wrapper">
-            <h2 class="reviews__title visually-hidden">Оставить отзыв</h2>
+            <h2 class="reviews__title">Оставить отзыв</h2>
             <div class="reviews__form">
               <div class="wpcf7">
                 <form action="https://echo.htmlacademy.ru/" class="wpcf7-form" method="post">
-                  <div class="cf7md-item-textarea textarea">
-                    <label class="textarea__label" for="reviews-textarea">Оставить отзыв</label>
-                    <textarea class="wpcf7-textarea" id="reviews-textarea" name="reviews-textarea" placeholder="Расскажите, что вы думаете о проекте"></textarea>
-                  </div>
-                  <div class="cf7md-item-text field-name">
-                    <label class="field-name__label visually-hidden" for="user-name">Введите Ваше имя</label>
-                    <input class="wpcf7-text" type="text" id="user-name" name="user-name" placeholder="Ваше имя" required>
-                  </div>
-                  <button class="wpcf7-submit button" type="submit">Отправить</button>
+                  <p>
+                    <span class="wpcf7-form-control-wrap">
+                      <textarea class="wpcf7-textarea" name="reviews-textarea" placeholder="Расскажите, что вы думаете о проекте" cols="40" rows="10"></textarea>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="wpcf7-form-control-wrap">
+                      <input class="wpcf7-text" type="text" size="40" name="user-name" placeholder="Ваше имя" required>
+                    </span>
+                  </p>
+                  <p>
+                    <input class="wpcf7-submit" type="submit" value="Отправить">
+                  </p>
                   <div class="reviews__form-desc">
                     <p>Отзыв будет добавлен после проверки модератором</p>
                   </div>
                 </form>
               </div>
             </div>
-            <div class="reviews__review-wrapper">
+            <div class="reviews__left-comments">
               <div class="review">
                 <div class="review__image-wrapper">
                   <img src="img/ivan.jpg" alt="Иван" class="review__image" width="50" height="50">
@@ -72,7 +76,7 @@
               </div>
               <div class="review">
                 <div class="review__image-wrapper">
-                  <img src="" alt="" class="review__image" width="50" height="50">
+                  <img src="img/maria.jpg" alt="" class="review__image" width="50" height="50">
                 </div>
                 <p class="review__name">Мария Рачинская</p>
                 <p class="review__text">Мне особенно понравилось решение лестничных клеток.<br>Кружки вообще очень стильные!</p>
