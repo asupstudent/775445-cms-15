@@ -11,7 +11,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   color: #000000;
-  min-width: 1150px;
+  min-width: 1440px;
 }
 
 .page-main {
@@ -26,6 +26,61 @@ body {
   font-display: swap;
   src: url("../fonts/Arkhip.woff2") format("woff2"),
     url("../fonts/Arkhip.woff") format("woff");
+}
+
+.page-header {
+  background-color: #000000;
+}
+
+.page-header__wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 21px 166px 16px 32px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.page-header__menu-wrapper {
+  margin-top: -10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-primary-container {
+  margin-left: 60px;
+}
+
+.menu-primary-container .menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-primary-container a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 16px;
+}
+
+.page-header__info-wrapper {
+  margin-left: auto;
+  margin-top: -10px;
+}
+
+.page-header__info-wrapper a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
 }
 
 .wysiwyg-wrapper h1 {
