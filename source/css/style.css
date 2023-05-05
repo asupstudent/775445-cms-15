@@ -63,7 +63,6 @@ p {
 }
 
 .menu-primary-container .menu-item-has-children > ul {
-  display: none;
   list-style: none;
 }
 
@@ -85,10 +84,18 @@ p {
   padding-right: 18px;
 }
 
-.menu-primary-container .menu .menu-item:last-child a {
+.menu-primary-container .menu > .menu-item:last-child a {
   border: 1px solid #9f7303;
   border-radius: 8px;
   padding: 6px 21px 5px;
+}
+
+.menu-primary-container .menu > .menu-item:last-child a:hover {
+  background-color: #fffdf8;
+}
+
+.menu-primary-container .menu > .menu-item:last-child a:active {
+  background-color: #fff7e3;
 }
 
 .menu-primary-container .menu-item-has-children {
@@ -97,6 +104,36 @@ p {
   background-repeat: no-repeat;
   background-size: 13px 9px;
   background-position: right 58%;
+}
+
+.menu-primary-container .sub-menu {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 18px;
+  padding: 24px 16px 30px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0 2px 4px rgba(97, 97, 97, 0.18), 0 4px 8px rgba(97, 97, 97, 0.18);
+  z-index: 2;
+}
+
+.menu-primary-container .menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.menu-primary-container .sub-menu a {
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.menu-primary-container .sub-menu .menu-item:last-child a {
+  margin-bottom: 0;
+}
+
+.menu-primary-container a:hover {
+  color: #9f7303;
 }
 
 .main-area {

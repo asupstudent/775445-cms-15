@@ -92,7 +92,6 @@ body {
   background-color: #fef9f3;
   min-width: 320px;
   z-index: 2;
-  border: 1px solid #ff6347;
 }
 
 .menu-primary-container .menu-item-has-children:hover .sub-menu {
